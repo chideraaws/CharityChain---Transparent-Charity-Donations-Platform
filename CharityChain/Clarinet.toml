@@ -1,0 +1,15 @@
+
+[project]
+name = "CharityChain"
+authors = []
+telemetry = true
+[repl.analysis]
+passes = ["check_checker"]
+[repl.analysis.check_checker]
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
+
+[contracts.CharityChain]
+path = "contracts/CharityChain.clar"
+depends_on = []
